@@ -1,0 +1,22 @@
+
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /*this will make reponsive like flex wrap */
+    /* grid-template-columns: repeat(3,1fr); */
+}
+
+.item{
+    width: 20%;
+    height: 50px;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+
+@media screen and (max-width:500px) {
+    .container{
+    grid-template-columns: 1fr
+    }
+}
